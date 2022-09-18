@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+.dropdown-btn{
+  padding: 10px;
+  width: 200px;
+  display: inline-block;
+  padding-inline-start: 20px;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+}
+.dropdown-btn button{
+  padding: 10px;
+  border: none;
+  width: 170px;
+}
+.dropdown-btn .button:hover{
+  background-color: rgb(181, 221, 221);
+}
+
+.dropdown-btn .checkbox{
+  padding-left: 20px;
+  padding-top: 5px;
+  visibility: hidden;
+  background-color: antiquewhite;
+  width: 170px;
+  display: inline-block;
+}
+
+.world-clock .clocks-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.world-clock .clocks{
+    position: relative;
+    margin-left: 50px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    opacity: 0;
+    transition: all 2s;
+}
+.world-clock .default-clock{
+  position: relative;
+  margin-left: 35%;
+  margin-top: 5%;
+  width: 230px;
+  opacity: 1;
+}
+.world-clock .second{
+    border-left: 1px solid red;
+    height: 100px;
+    position: absolute;
+    left: 111px;
+    bottom: 54%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
+.world-clock .minute{
+    border-left: 2px solid black;
+    height: 85px;
+    font-weight: bold;
+    position: absolute;
+    left: 111px;
+    bottom: 54%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
+.world-clock .hour{
+    border-left: 3px solid black;
+    height: 65px;
+    font-weight: bolder;
+    position: absolute;
+    left: 111px;
+    bottom: 54%;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
+.world-clock .city{
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .clocks-container{
+    flex-direction: column;
+  }
+  .world-clock .clocks{
+    margin-left: 0;
+  }
+  .world-clock .default-clock{
+    margin-left: 35%;
+  }
+}
