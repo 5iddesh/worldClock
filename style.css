@@ -50,6 +50,7 @@ body{
     margin-top: 2%;
     margin-bottom: 2%;
     transition: display 1s;
+    display: none;
 }
 .world-clock .default-clock{
   position: relative;
@@ -57,7 +58,16 @@ body{
   margin: auto;
   margin-top: 5%;
   width: 230px;
-  opacity: 1;
+  display: block;
+}
+.world-clock .default-clock .second{
+  left: 113px;
+}
+.world-clock .default-clock .minute{
+  left: 113px;
+}
+.world-clock .default-clock .hour{
+  left: 113px;
 }
 .world-clock .second{
     border-left: 1px solid red;
