@@ -15,6 +15,7 @@ body{
   position: fixed;
   top: 1%;
   left: 1%;
+  z-index: 100;
 }
 .dropdown-btn button{
   padding: 10px;
@@ -32,11 +33,14 @@ body{
   background-color: antiquewhite;
   width: 170px;
   display: inline-block;
+  transition: display 1s;
 }
 
 .world-clock .clocks-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 10%;
+  flex-wrap: wrap;
   align-items: center;
   margin-top: 50px;
 }
@@ -45,12 +49,12 @@ body{
     margin-left: 50px;
     margin-top: 2%;
     margin-bottom: 2%;
-    opacity: 0;
-    transition: all 2s;
+    transition: display 1s;
 }
 .world-clock .default-clock{
   position: relative;
-  margin-left: 35%;
+  text-align: center;
+  margin: auto;
   margin-top: 5%;
   width: 230px;
   opacity: 1;
@@ -92,11 +96,19 @@ body{
 @media only screen and (max-width: 1000px) {
   .clocks-container{
     flex-direction: column;
+    justify-content: center;
   }
   .world-clock .clocks{
     margin-left: 0;
   }
   .world-clock .default-clock{
-    margin-left: 35%;
+    text-align: center;
+    margin: auto;
+    margin-top: 15%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .world-clock .default-clock{
+    margin-top: 25%;
   }
 }

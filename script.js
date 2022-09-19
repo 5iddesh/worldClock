@@ -47,12 +47,12 @@ function displayClock(){
   let checkboxes = checkbox.querySelectorAll("input");
   checkboxes.forEach((checkbox, index) => {
     if(checkbox.checked){
-      clocks[index].style.opacity = "1";
-      // clocks[index].style.display = "block";  // transition is not working on display property
+      // clocks[index].style.opacity = "1";
+      clocks[index].style.display = "block";  // transition is not working on display property
 
     }else{
-      clocks[index].style.opacity = "0";
-      // clocks[index].style.display = "none";
+      // clocks[index].style.opacity = "0";
+      clocks[index].style.display = "none";
 
     }
   })
