@@ -50,7 +50,7 @@ body{
     margin-top: 2%;
     margin-bottom: 2%;
     transition: display 1s;
-    display: none;
+    /* display: none; */
 }
 .world-clock .default-clock{
   position: relative;
@@ -87,6 +87,7 @@ body{
     bottom: 54%;
     transform-origin: bottom;
     transform: rotate(0deg);
+    transition: transform 1s;
 }
 .world-clock .hour{
     border-left: 3px solid black;
@@ -97,6 +98,7 @@ body{
     bottom: 54%;
     transform-origin: bottom;
     transform: rotate(0deg);
+    transition: transform 1s;
 }
 .world-clock .city{
   color: white;
